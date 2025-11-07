@@ -1,0 +1,94 @@
+/* Paleta de Morados (Ejemplos de códigos HEX, puedes buscar más) */
+:root {
+    --morado-oscuro: #45347A; /* Violeta Anonymous de Montana Colors */
+    --morado-medio: #6D63A5; /* Violeta Profeta */
+    --morado-claro: #9993C3; /* Violeta */
+    --morado-neón: #D442FF;
+    --fondo-principal: #1f143a; /* Fondo muy oscuro */
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Permanent Marker', cursive, sans-serif; /* Fuente con estilo graffiti */
+    margin: 0;
+    padding: 0;
+    color: white; /* Color de texto claro */
+    /* Degradado de morados en el fondo para un look moderno/graffiti */
+    background: linear-gradient(135deg, var(--fondo-principal) 0%, var(--morado-oscuro) 100%);
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+}
+
+/* Estilo del Encabezado (Header) */
+.header-graffiti {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--morado-neón); /* Borde neón para simular luz o goteo */
+    box-shadow: 0 0 20px var(--morado-neón); /* Efecto de brillo neón */
+}
+
+.header-graffiti h1 {
+    font-size: 4em;
+    color: var(--morado-neón);
+    text-shadow: 3px 3px 0 var(--morado-medio), 6px 6px 0 var(--morado-oscuro); /* Efecto de capas tipo graffiti */
+    margin: 0;
+}
+
+/* Estilos de Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--morado-neón);
+    border-color: var(--morado-neón);
+    background-color: var(--morado-oscuro);
+    transform: scale(1.1); /* Pequeño zoom al pasar el mouse */
+}
+
+/* Estilos para las Secciones de Contenido */
+.seccion-contenido {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-contenido h2 {
+    color: var(--morado-claro);
+    font-size: 2.5em;
+    margin-top: 30px;
+}
+
+.seccion-contenido p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Estilo del Pie de Página (Footer) */
+footer {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 3px solid var(--morado-oscuro);
+}
