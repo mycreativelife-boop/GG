@@ -1,36 +1,41 @@
-/* Paleta de Morados (Ejemplos de códigos HEX, puedes buscar más) */
+/* Paleta de Morados */
 :root {
-    --morado-oscuro: #45347A; /* Violeta Anonymous de Montana Colors */
-    --morado-medio: #6D63A5; /* Violeta Profeta */
-    --morado-claro: #9993C3; /* Violeta */
-    --morado-neón: #D442FF;
+    --morado-oscuro: #45347A; /* Violeta Anonymous */
+    --morado-medio: #6D63A5; 
+    --morado-claro: #9993C3; 
+    --morado-neón: #D442FF; /* Color de acento neón */
     --fondo-principal: #1f143a; /* Fondo muy oscuro */
 }
 
 /* Estilos Generales */
 body {
-    font-family: 'Permanent Marker', cursive, sans-serif; /* Fuente con estilo graffiti */
+    /* FUENTE LEGIBLE: Montserrat para todo el cuerpo del texto */
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
     margin: 0;
     padding: 0;
-    color: white; /* Color de texto claro */
-    /* Degradado de morados en el fondo para un look moderno/graffiti */
+    color: white; 
+    /* Degradado de morados */
     background: linear-gradient(135deg, var(--fondo-principal) 0%, var(--morado-oscuro) 100%);
-    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    background-attachment: fixed; 
 }
 
 /* Estilo del Encabezado (Header) */
 .header-graffiti {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid var(--morado-neón); /* Borde neón para simular luz o goteo */
-    box-shadow: 0 0 20px var(--morado-neón); /* Efecto de brillo neón */
+    border-bottom: 5px solid var(--morado-neón); 
+    box-shadow: 0 0 20px var(--morado-neón); 
 }
 
 .header-graffiti h1 {
+    /* FUENTE GRAFFITI: Permanent Marker solo para el título principal "GG" */
+    font-family: 'Permanent Marker', cursive; 
     font-size: 4em;
     color: var(--morado-neón);
-    text-shadow: 3px 3px 0 var(--morado-medio), 6px 6px 0 var(--morado-oscuro); /* Efecto de capas tipo graffiti */
+    /* Efecto de capas tipo graffiti */
+    text-shadow: 3px 3px 0 var(--morado-medio), 6px 6px 0 var(--morado-oscuro); 
     margin: 0;
 }
 
@@ -54,13 +59,14 @@ nav ul li a {
     padding: 5px 10px;
     border: 2px solid transparent;
     transition: all 0.3s ease;
+    font-weight: 700; /* Negrita para enlaces */
 }
 
 nav ul li a:hover {
     color: var(--morado-neón);
     border-color: var(--morado-neón);
     background-color: var(--morado-oscuro);
-    transform: scale(1.1); /* Pequeño zoom al pasar el mouse */
+    transform: scale(1.1); 
 }
 
 /* Estilos para las Secciones de Contenido */
@@ -70,6 +76,9 @@ nav ul li a:hover {
 }
 
 .seccion-contenido h2 {
+    /* Títulos de sección más legibles */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: var(--morado-claro);
     font-size: 2.5em;
     margin-top: 30px;
@@ -79,7 +88,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 20px auto;
     line-height: 1.6;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 15px;
     border-radius: 10px;
 }
